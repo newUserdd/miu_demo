@@ -1,22 +1,4 @@
 # miu_demo 案例练习
 # day_1 已完成头部和商品的第一列展示
+# day_2 中间部分商品的展示 差点击视频播放部分以及底部完成一点点
 
-> A Vue.js project
-
-## Build Setup
-
-``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-```
-
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
