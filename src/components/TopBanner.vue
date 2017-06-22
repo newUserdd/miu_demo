@@ -27,7 +27,7 @@
     <slide :banners="banners"></slide>
   </div>
 </template>
-<style>
+<style scoped="">
   .top-banner {
     position: relative;
     width:1226px;

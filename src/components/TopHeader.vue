@@ -49,7 +49,7 @@
     </transition>
   </div>
 </template>
-<style>
+<style scoped="">
   .top-header {
     width: 100%;
     height: 100%;

@@ -5,6 +5,7 @@
     <top-banner></top-banner>
     <top-sub></top-sub>
     <goods></goods>
+    <temp-footer></temp-footer>
   </div>
 </template>
 
@@ -15,6 +16,8 @@
   import TopBanner from './components/TopBanner'
   import TopSub from './components/TopSub'
   import Goods from './components/Goods'
+  import TempFooter from './components/TempFooter'
+
   export default {
     name: 'app',
     components: {
@@ -22,7 +25,16 @@
       topHeader: TopHeader,
       TopBanner: TopBanner,
       TopSub: TopSub,
-      Goods: Goods
+      Goods: Goods,
+      TempFooter
+    },
+    created:function () {
+      this.$on('play',function (opts) {
+          console.log(opts,'opts');
+      })
+    },
+    methods:{
+
     }
   }
 </script>

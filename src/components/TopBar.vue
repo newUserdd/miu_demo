@@ -31,7 +31,7 @@
     </div>
   </header>
 </template>
-<style>
+<style scoped="">
   .top-container{
     width:100%;
     height:40px;

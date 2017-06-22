@@ -1,14 +1,15 @@
 <template>
     <div class="boxs-container ">
       <div class="boxs clearfix">
-        <div class="boxs-top">
+        <goods-header :title="'智能硬件'" :is-show-more="true" :more-url="moreUrl"></goods-header>
+  <!--      <div class="boxs-top">
           <h3>只能硬件</h3>
           <a href="">
             <span>查看全部
                 <i class="fa fa-chevron-circle-right fa-fw"></i>
             </span>
           </a>
-        </div>
+        </div>-->
         <div class="boxs-content clearfix">
           <div class="box-left">
             <a href="http://www.mi.com/scooter/" target="_blank">
@@ -54,11 +55,11 @@
     height:auto;
     margin:0 auto;
   }
-  .boxs-top{
+ /* .boxs-top{
     width:100%;
     height:58px;
     line-height:58px;
-    /*border:1px solid red;*/
+    !*border:1px solid red;*!
   }
   .boxs-top h3{
     float: left;
@@ -85,7 +86,7 @@
   }
   .boxs-top span:hover i{
     color:#ff6700;
-  }
+  }*/
   .box-right img {
     display: block;
     width: 160px;
@@ -178,9 +179,11 @@
   }
 </style>
 <script>
+  import GoodsHeader from './common/GoodsHeader'
     export default({
       data () {
         return {
+            moreUrl:'',
           goods: [
             {sourceUrl: '//item.mi.com/1161200059.html', imgUrl: 'http://i3.mifile.cn/a4/T1rQAgB7Av1RXrhCrK.jpg', title: '小米路由器3', desc: '四天线设计，更安全更稳定', price: '149', discountType: 'free', discount: '免邮费'},
             {sourceUrl: '//www.mi.com/mibicycle/', imgUrl: 'http://i3.mifile.cn/a4/2b69b930-a2fd-4d09-a46a-8690cb79f764', title: '电助力折叠自行车', desc: '力矩传感电助力，让城市出行轻松有趣', price: '149', discountType: 'new', discount: '新品'},
@@ -192,6 +195,9 @@
             {sourceUrl: '//list.mi.com/accessories/tag?id=guangganban', imgUrl: 'http://i1.mifile.cn/a1/T1HcAQBgDT1RXrhCrK!220x220.jpg', title: '小米手环 光感版', desc: '实时监测心率，科学运动', price: '99'}
           ]
         }
+      },
+      components:{
+        GoodsHeader
       }
     })
 </script>

@@ -69,7 +69,7 @@
     </ul>
   </div>
 </template>
-<style>
+<style scoped="">
   .top-sub {
     position: relative;
     width: 1226px;
